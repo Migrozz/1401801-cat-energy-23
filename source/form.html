@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -17,10 +18,10 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
               <a>Подбор продукции</a>
@@ -69,31 +70,31 @@
           <legend class="your-program__contact-title">
             Контактные данные (владельца кота)
           </legend>
-          <label class="your-program__contact-mail">
+          <label class="your-program__contact-info">
             E-mail:*
             <input class="your-program__contact__field" type="email" name="email" placeholder="kuklachev@gmail.com">
           </label>
-          <label class="your-program__contact-tel">
+          <label class="your-program__contact-info">
             Телефон:*
             <input class="your-program__contact__field" type="text" name="phone" placeholder="8 (960) 900-60-90">
           </label>
         </fieldset>
         <fieldset class="your-program__comment">
           <legend class="your-program__comment-title">Комментарий</legend>
-          <textarea class="your-program__comment__field" name="letter" placeholder="Расскажите обо всех"></textarea>
+          <textarea class="your-program__comment__field" name="letter" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="your-program__additional">
           <legend class="your-program__additional-title">Дополнительно</legend>
           <input class="your-program__additional__checkbox" type="checkbox" name="sugar" id="sugar" checked>
-          <label class="your-program__additional-sugar" for="sugar">Сахарозаменитель</label>
+          <label class="your-program__additional-comp" for="sugar">Сахарозаменитель</label>
           <input class="your-program__additional__checkbox" type="checkbox" name="water" id="water">
-          <label class="your-program__additional-water" for="water">Питьевая вода</label>
+          <label class="your-program__additional-comp" for="water">Питьевая вода</label>
           <input class="your-program__additional__checkbox" type="checkbox" name="milk" id="milk">
-          <label class="your-program__additional-milk" for="milk">Молоко</label>
+          <label class="your-program__additional-comp" for="milk">Молоко</label>
           <input class="your-program__additional__checkbox" type="checkbox" name="vita" id="vita">
-          <label class="your-program__additional-vita" for="vita">Витамины</label>
-          <button class="your-program__submit" type="submit">Отправить заявку</button>
-          <span>*__ Обязательные поля</span>
+          <label class="your-program__additional-comp" for="vita">Витамины</label>
+          <button class="your-program__submit button" type="submit">Отправить заявку</button>
+          <span class="your-program__additional-compulsory">*__ Обязательные поля</span>
         </fieldset>
       </form>
     </main>
