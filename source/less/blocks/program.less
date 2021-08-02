@@ -9,6 +9,28 @@
   padding-right: 36px;
   color: #ffffff;
   margin: 22px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .program {
+    width: @tablet-width;
+    background-color: #ffffff;
+    background-image: none;
+    color: #000000;
+  }
+
+  .program__link {
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program {
+    width: @desktop-width;
+  }
 }
 
 .program__title {

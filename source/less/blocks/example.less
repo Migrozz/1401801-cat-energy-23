@@ -5,6 +5,14 @@
   background-color: #eaeaea;
 }
 
+@media (min-width: @desktop-width) {
+  .example__content-wrapper {
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .example__title {
   font-family: "Oswald", "Arial", sans-serif;
   margin: 0;
@@ -20,8 +28,33 @@
   margin-bottom: 25px;
 }
 
+@media (min-width: @desktop-width) {
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .example__stats-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__stats-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
 .example__stats {
   margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .example__stats-value {

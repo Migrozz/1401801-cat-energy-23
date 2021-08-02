@@ -5,6 +5,17 @@
 .page-footer__bottom {
   margin: 0;
   padding: 39px 20px 32px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 708px;
+  }
 }
 
 .page-footer__bottom-brand {
