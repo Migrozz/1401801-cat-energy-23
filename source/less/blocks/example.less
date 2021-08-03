@@ -4,12 +4,14 @@
   padding-top: 27px;
   background-color: #eaeaea;
 
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    display: flex;
+    flex-direction: column;
+  }
+
   @media (min-width: @desktop-width) {
-    .example__content-wrapper {
-      width: 445px;
-      display: flex;
-      flex-direction: column;
-    }
+    width: 1440px;
   }
 }
 
@@ -28,30 +30,30 @@
   margin-bottom: 25px;
 }
 
-.example_wrapper {
+.example__wrapper {
   @media (min-width: @desktop-width) {
-    .example__wrapper {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-    }
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
 }
 
 .example__stats-wrapper {
   @media (min-width: @tablet-width) {
-    .example__stats-wrapper {
-      display: flex;
-      justify-content: space-between;
-    }
+    display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    .example__stats-wrapper {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-    }
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+.example__content-wrapper {
+  @media (min-width: @desktop-width) {
+    width: 436px;
   }
 }
 
