@@ -9,6 +9,20 @@
   padding-right: 36px;
   color: #ffffff;
   margin: 22px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    background-color: #ffffff;
+    background-image: none;
+    color: #000000;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
 }
 
 .program__title {

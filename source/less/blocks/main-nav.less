@@ -4,6 +4,7 @@
   font-size: 20px;
   line-height: 20px;
   color: #000000;
+  text-align: center;
 }
 
 .main-nav__link {
@@ -14,4 +15,13 @@
 .main-nav__list {
   list-style: none;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

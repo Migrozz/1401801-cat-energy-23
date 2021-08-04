@@ -1,3 +1,18 @@
 .page-header {
   background-color: #ffffff;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
