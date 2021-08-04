@@ -1,26 +1,36 @@
 .your-program {
   margin: 0;
-  padding: 28px 20px 32px 20px;
   font-family: "Oswald", "Arial", sans-serif;
+}
+
+.your-program__fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .your-program__title {
   margin: 0;
+  padding: 26px 20px 36px 20px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin-bottom: 37px;
 }
 
 .your-program__description {
   margin: 0;
-  margin-bottom: 52px;
+  margin-bottom: 40px;
   text-transform: uppercase;
 }
 
 .your-program__info {
   padding-bottom: 25px;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .your-program__info__field {
@@ -32,6 +42,8 @@
 .your-program__info-block {
   font-size: 16px;
   color: #444444;
+  display: flex;
+  flex-direction: column;
 }
 
 .your-program__radio-name {
@@ -40,6 +52,10 @@
 
 .your-program__goals-list {
   margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .your-program__contact {
@@ -47,6 +63,12 @@
   margin: 0;
   margin-bottom: 25px;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .your-program__contact-title {
@@ -89,12 +111,30 @@
   padding: 25px;
   margin: 0;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
 }
 
 .your-program__additional-title {
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
+}
+
+.your-program__additional-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .your-program__additional-comp {

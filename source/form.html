@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -36,66 +37,78 @@
         <p class="your-program__description">
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
-        <div class="your-program__info">
-          <div class="your-program__info-block">
-            <label class="your-program__info-name">
-              Имя:*
-              <input class="your-program__info__field" type="text" name="name" placeholder="Барсик">
+        <div class="your-program__fieldset-wrapper">
+          <fieldset class="your-program__info">
+            <div class="your-program__info-block">
+              <label class="your-program__info-name">
+                Имя:*
+                <input class="your-program__info__field" type="text" name="name" placeholder="Барсик">
+              </label>
+              <label class="your-program__info-weight">
+                Вес (кг):*
+                <input class="your-program__info__field" type="text" name="weight" placeholder="7">
+              </label>
+              <label class="your-program__info-age">
+                Возраст (лет):
+                <input class="your-program__info__field" type="text" name="age" placeholder="7">
+              </label>
+            </div>
+            <ul class="your-program__goals-list">
+              <li class="your-program__goals-item">
+                <input class="your-program__radio" type="radio" name="goal" id="slimming">
+                <label class="your-program__radio-name" for="slimming">Похудение</label>
+              </li>
+              <li class="your-program__goals-item">
+                <input class="your-program__radio" type="radio" name="goal" id="gain">
+                <label class="your-program__radio-name" for="gain">Набор массы</label>
+              </li>
+              <li class="your-program__goals-item">
+                <input class="your-program__radio" type="radio" name="goal" id="need-help">
+                <label class="your-program__radio-name" for="need-help">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="your-program__contact">
+            <legend class="your-program__contact-title">
+              Контактные данные (владельца кота)
+            </legend>
+            <label class="your-program__contact-info">
+              E-mail:*
+              <input class="your-program__contact__field" type="email" name="email" placeholder="kuklachev@gmail.com">
             </label>
-            <label class="your-program__info-weight">
-              Вес (кг):*
-              <input class="your-program__info__field" type="text" name="weight" placeholder="7">
+            <label class="your-program__contact-info">
+              Телефон:*
+              <input class="your-program__contact__field" type="text" name="phone" placeholder="8 (960) 900-60-90">
             </label>
-            <label class="your-program__info-age">
-              Возраст (лет):
-              <input class="your-program__info__field" type="text" name="age" placeholder="7">
-            </label>
-          </div>
-          <ul class="your-program__goals-list">
-            <li class="your-program__goals-item">
-              <input class="your-program__radio" type="radio" name="goal" id="slimming">
-              <label class="your-program__radio-name" for="slimming">Похудение</label>
-            </li>
-            <li class="your-program__goals-item">
-              <input class="your-program__radio" type="radio" name="goal" id="gain">
-              <label class="your-program__radio-name" for="gain">Набор массы</label>
-            </li>
-            <li class="your-program__goals-item">
-              <input class="your-program__radio" type="radio" name="goal" id="need-help">
-              <label class="your-program__radio-name" for="need-help">Не знаю (нужен ваш совет)</label>
-            </li>
-          </ul>
+          </fieldset>
+          <fieldset class="your-program__comment">
+            <legend class="your-program__comment-title">Комментарий</legend>
+            <textarea class="your-program__comment__field" name="letter" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="your-program__additional">
+            <legend class="your-program__additional-title">Дополнительно</legend>
+            <ul class="your-program__additional-list">
+              <li class="your-program__additional-item">
+                <input class="your-program__additional__checkbox" type="checkbox" name="sugar" id="sugar" checked>
+                <label class="your-program__additional-comp" for="sugar">Сахарозаменитель</label>
+              </li>
+              <li class="your-program__additional-item">
+                <input class="your-program__additional__checkbox" type="checkbox" name="water" id="water">
+                <label class="your-program__additional-comp" for="water">Питьевая вода</label>
+              </li>
+              <li class="your-program__additional-item">
+                <input class="your-program__additional__checkbox" type="checkbox" name="milk" id="milk">
+                <label class="your-program__additional-comp" for="milk">Молоко</label>
+              </li>
+              <li class="your-program__additional-item">
+                <input class="your-program__additional__checkbox" type="checkbox" name="vita" id="vita">
+                <label class="your-program__additional-comp" for="vita">Витамины</label>
+              </li>
+            </ul>
+              <button class="your-program__submit button" type="submit">Отправить заявку</button>
+              <span class="your-program__additional-compulsory">*__ Обязательные поля</span>
+          </fieldset>
         </div>
-        <fieldset class="your-program__contact">
-          <legend class="your-program__contact-title">
-            Контактные данные (владельца кота)
-          </legend>
-          <label class="your-program__contact-info">
-            E-mail:*
-            <input class="your-program__contact__field" type="email" name="email" placeholder="kuklachev@gmail.com">
-          </label>
-          <label class="your-program__contact-info">
-            Телефон:*
-            <input class="your-program__contact__field" type="text" name="phone" placeholder="8 (960) 900-60-90">
-          </label>
-        </fieldset>
-        <fieldset class="your-program__comment">
-          <legend class="your-program__comment-title">Комментарий</legend>
-          <textarea class="your-program__comment__field" name="letter" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
-        <fieldset class="your-program__additional">
-          <legend class="your-program__additional-title">Дополнительно</legend>
-          <input class="your-program__additional__checkbox" type="checkbox" name="sugar" id="sugar" checked>
-          <label class="your-program__additional-comp" for="sugar">Сахарозаменитель</label>
-          <input class="your-program__additional__checkbox" type="checkbox" name="water" id="water">
-          <label class="your-program__additional-comp" for="water">Питьевая вода</label>
-          <input class="your-program__additional__checkbox" type="checkbox" name="milk" id="milk">
-          <label class="your-program__additional-comp" for="milk">Молоко</label>
-          <input class="your-program__additional__checkbox" type="checkbox" name="vita" id="vita">
-          <label class="your-program__additional-comp" for="vita">Витамины</label>
-          <button class="your-program__submit button" type="submit">Отправить заявку</button>
-          <span class="your-program__additional-compulsory">*__ Обязательные поля</span>
-        </fieldset>
       </form>
     </main>
     <footer class="page-footer">
@@ -105,7 +118,7 @@
           <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="contacts__map">
-          <img class="contacts__map-img" src="http://placehold.it/768x361" width="768" height="361" alt="Схема проезда ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <img class="contacts__map-img" src="http://placehold.it/320x362" width="320" height="362" alt="Схема проезда ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </div>
       </section>
       <section class="page-footer__bottom container">
