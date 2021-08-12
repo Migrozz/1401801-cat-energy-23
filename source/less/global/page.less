@@ -6,4 +6,18 @@
   font-size: 14px;
   line-height: 18px;
   font-family: "Arial", sans-serif;
+  counter-reset: item;
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 656px;
+      background-color: rgba(104, 183, 56, 0.85);
+    }
+  }
 }

@@ -62,58 +62,22 @@
   @media (min-width: @tablet-width) {
     flex-direction: column;
     padding-bottom: 40px;
-  }
-}
 
-.features__item--first-icon::before {
-  @media (min-width: @tablet-width) {
-    content: "";
-    position: absolute;
-    width: 112px;
-    height: 280px;
-    z-index: -1;
-    top: 0;
-    right: 42px;
-    background: url("../img/icons/1.svg") no-repeat;
-  }
-}
-
-.features__item--second-icon::before {
-  @media (min-width: @tablet-width) {
-    content: "";
-    position: absolute;
-    width: 112px;
-    height: 280px;
-    z-index: -1;
-    top: 0;
-    right: 42px;
-    background: url("../img/icons/2.svg") no-repeat;
-  }
-}
-
-.features__item--third-icon::before {
-  @media (min-width: @tablet-width) {
-    content: "";
-    position: absolute;
-    width: 112px;
-    height: 280px;
-    z-index: -1;
-    top: 0;
-    right: 42px;
-    background: url("../img/icons/3.svg") no-repeat;
-  }
-}
-
-.features__item--fourth-icon::before {
-  @media (min-width: @tablet-width) {
-    content: "";
-    position: absolute;
-    width: 112px;
-    height: 280px;
-    z-index: -1;
-    top: 0;
-    right: 42px;
-    background: url("../img/icons/4.svg") no-repeat;
+    &::before {
+      counter-increment: item;
+      content: "" counter(item);
+      position: absolute;
+      width: 136px;
+      height: 280px;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      z-index: -1;
+      top: -40px;
+      right: 0;
+    }
   }
 }
 
