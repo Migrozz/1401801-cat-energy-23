@@ -1,26 +1,68 @@
 .additional-goods {
-  margin: 0;
+  margin: 0 auto;
   font-weight: 400;
+  width: 280px;
+  padding: 0 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    background-color: #68b738;
+    top: 40px;
+    right: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 706px;
+    padding: 0 30px;
+
+    &::before {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+  }
 }
 
 .additional-goods__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
 .additional-goods__title {
   margin: 0;
-  padding: 25px 75px 35px 20px;
+  padding: 25px 0 35px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: inherit;
+  width: 226px;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 25px 36px 35px;
+    margin-bottom: 80px;
+    width: 338px;
+    margin-top: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 75px;
+  }
 }
 
 .additional-goods__name {
@@ -31,21 +73,97 @@
   line-height: 16px;
   color: #222222;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-goods__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+  }
 }
 
 .additional-goods__item {
-  padding: 15px 20px 20px 20px;
+  padding: 15px 0 20px;
+  border-top: 1px solid #cdcdcd;
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 27px 37px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 895px;
+    padding: 15px 0;
+  }
 }
 
 .additional-goods__description {
   line-height: 14px;
   color: #444444;
+  margin: 0;
+  margin-top: 13px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-left: auto;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+.additional-goods__price {
+  margin-left: 49px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 112px;
+    margin-right: 38px;
+    width: 44px;
+  }
+}
+
+.additional-goods__link {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 109px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+  }
 }
 
 .additional-goods__bonus {
@@ -55,4 +173,52 @@
   background-image: url("../img/photo/gift-photo.png");
   background-repeat: no-repeat;
   background-color: #6fb346;
+  padding: 186px 61px 43px 58px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    background: url("../img/icons/icon_gift.svg") no-repeat;
+    top: 58px;
+    left: 101px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      top: 57px;
+      left: 77px;
+    }
+
+    padding: 71px 124px 69px 422px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    width: 285px;
+    height: 289px;
+
+    &::before {
+      top: 56px;
+      left: 100px;
+    }
+  }
+}
+
+.additional-goods__bonus-text {
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    padding: 184px 60px 42px;
+  }
+}
+
+
+.additional-goods__quantity {
+  @media (min-width: @desktop-width) {
+    width: 140px;
+  }
 }

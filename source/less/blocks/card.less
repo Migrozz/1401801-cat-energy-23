@@ -1,6 +1,17 @@
 .card {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  width: 280px;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+  }
 }
 
 .card__title {
@@ -9,7 +20,15 @@
   line-height: 36px;
   font-weight: 400;
   margin: 0;
-  padding: 26px 42px 40px 20px;
+  padding: 26px 0 40px;
+  border-top: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    padding: 26px 0 40px 0;
+    border: none;
+    font-size: 54px;
+    line-height: 60px;
+  }
 }
 
 .card__list {
@@ -22,17 +41,50 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 141px;
+    margin-top: 140px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
 .card__item {
-  padding: 20px 20px 25px 20px;
+  padding: 20px 0 25px 0;
   margin: 0;
   width: 280px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 248px;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    padding: 160px 38px 39px 38px;
+    border: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 170px;
+    padding: 160px 36px 40px 40px;
+  }
+}
+
+.card__img-wrapper {
+  width: 140px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: -70px;
+    left: 100px;
+  }
 }
 
 .card__name {
@@ -42,15 +94,170 @@
   font-weight: 400;
   color: #222222;
   text-transform: uppercase;
+  margin: 0 0 13px;
+  width: 90px;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 140px;
+    padding-left: 60px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 20px;
+    line-height: 21px;
+  }
+}
+
+.card__description {
+  width: 140px;
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 170px;
+  }
 }
 
 .card__description-info {
   font-size: 12px;
   line-height: 16px;
   color: #444444;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 7px 0 9px 0;
+  }
 }
 
-.card__link-all {
+.card__link {
+  padding: 10px 109px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 93px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 53px;
+  }
+}
+
+.card__show-more__name {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 56px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    width: 134px;
+    padding-left: 60px;
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 15px;
+  }
+}
+
+.card__item--last {
+  justify-content: center;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    top: 39px;
+    left: 125px;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+    box-shadow: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+    border: 2px solid #f2f2f2;
+    width: 244px;
+
+    &::before,
+    &::after {
+      width: 60px;
+      top: 82px;
+      left: 132px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 166px;
+
+    &::before,
+    &::after {
+      top: 81px;
+      left: 92px;
+    }
+  }
+}
+
+.card__show-more__description {
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    width: 167px;
+    padding-left: 42px;
+    margin-top: 23px;
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.card__show-more__link {
   background-color: #f2f2f2;
   color: #444444;
+  padding: 10px 94px;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 79px;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 39px;
+  }
 }

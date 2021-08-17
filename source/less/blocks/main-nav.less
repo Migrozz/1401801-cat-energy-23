@@ -80,12 +80,12 @@
     font-weight: 400;
     border: none;
     padding: 0;
-    padding-left: 34px;
+    margin-left: 34px;
     font-size: 18px;
     line-height: 24px;
 
     &:first-child {
-      padding-left: 0;
+      margin-left: 0;
     }
   }
 }
@@ -96,6 +96,12 @@
   }
 
   @media (min-width: @desktop-width) {
+    border-bottom: 2px solid #68b738;
+  }
+}
+
+.main-nav__item--index-current {
+  @media (min-width: @desktop-width) {
     border-bottom: 2px solid #ffffff;
   }
 }
@@ -104,7 +110,9 @@
   color: #000000;
   text-decoration: none;
   display: block;
+}
 
+.main-nav__link--index {
   @media (min-width: @desktop-width) {
     color: #ffffff;
   }
