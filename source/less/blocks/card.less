@@ -77,13 +77,32 @@
 }
 
 .card__img-wrapper {
-  width: 140px;
+  padding-right: 36px;
   margin: 0;
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: -70px;
-    left: 100px;
+    bottom: 295px;
+    left: 86px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 40px;
+  }
+}
+
+.card__img--small {
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    height: 173px;
+  }
+}
+
+.card__img--big {
+  @media (min-width: @tablet-width) {
+    width: 168px;
+    height: 204px;
   }
 }
 
