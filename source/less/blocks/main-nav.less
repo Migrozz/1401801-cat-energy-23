@@ -27,6 +27,17 @@
   }
 }
 
+.main-nav--nojs .main-nav__list {
+  position: static;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -123,6 +134,14 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff;
+    left: 0;
+    z-index: 2;
+  }
 
   @media (min-width: @tablet-width) {
     width: 440px;
