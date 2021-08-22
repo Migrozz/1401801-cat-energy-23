@@ -12,11 +12,17 @@
   </head>
   <body class="page__body page__body--index">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/icons/logo-mobile.svg" width="34" height="38" alt="Логотип Cat Energy">
-        <img class="page-header__img" src="img/icons/name-logo.svg" width="101" height="18" alt="Cat Energy">
+      <a class="page-header__link">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/icons/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/icons/logo-tablet.svg">
+          <img class="page-header__logo" src="img/icons/logo-mobile.svg" width="34" height="38">
+        </picture>
+        <svg class="page-header__img"  width="101" height="18" viewBox="0 0 101 18" alt="Cat Energy">
+          <use xlink:href="img/icons/vector-sprite.svg#name-logo"></use>
+        </svg>
       </a>
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -150,7 +156,9 @@
         <div class="page-footer__bottom-content">
           <div class="page-footer__bottom-brand">
             <a class="page-footer__bottom-link">
-              <img src="img/icons/name-logo.svg" width="128" height="24" alt="Cat Energy">
+              <svg width="128" height="24" viewBox="0 0 128 24" alt="Cat Energy">
+                <use xlink:href="img/icons/vector-sprite.svg#footer-logo"></use>
+              </svg>
             </a>
           </div>
           <div class="page-footer__bottom-socials socials">
@@ -169,7 +177,9 @@
           <div class="page-footer__bottom-copyright">
             <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
               <span class="page-footer__copyright-sign">HTML Academy</span>
-              <img src="img/icons/academy-logo.svg" width="27" height="34" alt="HTML Academy">
+              <svg width="27" height="34" viewBox="0 0 27 34" >
+                <use xlink:href="img/icons/vector-sprite.svg#academy-logo"></use>
+              </svg>
             </a>
           </div>
         </div>
