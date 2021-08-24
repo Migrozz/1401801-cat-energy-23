@@ -277,6 +277,15 @@
   text-transform: uppercase;
   background-color: transparent;
   border: none;
+  border-bottom: 1px dotted #b8b8b8;
+
+  &:hover {
+    border-bottom: 1px solid #919191;
+  }
+
+  &:active {
+    border: none;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -337,6 +346,16 @@
       border: 1px solid #cdcdcd;
       top: -18px;
       right: -19px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+    }
+
+    &:hover::after {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+    }
+
+    &:active::after {
+      border: 1px solid #68b738;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     }
   }
 }

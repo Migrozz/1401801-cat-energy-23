@@ -156,11 +156,33 @@
   &::before {
     content: "";
     position: absolute;
-    top: 22px;
+    top: 28px;
     left: 102px;
-    width: 24px;
-    height: 12px;
-    background: url("../img/icons/arrow.svg") no-repeat;
+    width: 18px;
+    height: 2px;
+    background-color: #000000;
+    // background: url("../img/icons/arrow.svg") no-repeat;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border: 5px solid transparent;
+    border-left-color: #000000;
+    top: 24px;
+    left: 120px;
+  }
+
+  &:hover::before {
+    width: 26px;
+  }
+
+  &:hover::after {
+    left: 128px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: @tablet-width) {
@@ -169,8 +191,17 @@
     border: none;
 
     &::before {
-      top: 30px;
+      top: 34px;
       left: 128px;
+    }
+
+    &::after {
+      top: 30px;
+      left: 146px;
+    }
+
+    &:hover::after {
+      left: 154px;
     }
   }
 }

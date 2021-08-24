@@ -39,6 +39,14 @@
   margin: 0;
   margin-bottom: 32px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
@@ -57,9 +65,17 @@
   align-items: center;
   text-decoration: none;
   justify-content: space-between;
+
+  &:hover .page-footer__copyright-sign {
+    color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.page-footer__copyright-sign {
+.page-footer__copyright-name {
   color: #444444;
   font-size: 16px;
   padding-right: 138px;
@@ -67,4 +83,8 @@
   @media (min-width: @tablet-width) {
     padding-right: 22px;
   }
+}
+
+.page-footer__copyright-sign {
+  color: #666666;
 }

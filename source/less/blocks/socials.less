@@ -28,34 +28,13 @@
 
 .socials__link {
   font-size: 0;
-}
+  color: #666666;
 
-.socials__link--vk {
-  &::before {
-    content: "";
-    position: absolute;
-    background: url("../img/icons/icon_vkontakte.svg") no-repeat;
-    width: 23px;
-    height: 15px;
+  &:hover {
+    color: #68b738;
   }
-}
 
-.socials__link--instagram {
-  &::before {
-    content: "";
-    position: absolute;
-    background: url("../img/icons/icon_instagram.svg") no-repeat;
-    width: 23px;
-    height: 18px;
-  }
-}
-
-.socials__link--facebook {
-  &::before {
-    content: "";
-    position: absolute;
-    background: url("../img/icons/icon_facebook.svg") no-repeat;
-    width: 23px;
-    height: 20px;
+  &:active {
+    opacity: 0.5;
   }
 }

@@ -86,6 +86,14 @@
   border-bottom: 1px solid #e6e6e6;
   border-top: 1px solid #e6e6e6;
 
+  &:hover:not(.main-nav__item--current) {
+    opacity: 0.6;
+  }
+
+  &:active:not(.main-nav__item--current) {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     align-items: center;
     font-weight: 400;
@@ -102,6 +110,8 @@
 }
 
 .main-nav__item--current {
+  cursor: pointer;
+
   @media (min-width: @tablet-width) {
     border-bottom: 2px solid #68b738;
   }

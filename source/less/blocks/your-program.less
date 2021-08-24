@@ -87,6 +87,31 @@
   padding: 12px;
   border: 1px solid #e7e7e7;
 
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active:invalid {
+    border: 1px solid #ff8282;
+  }
+
+  &:focus-visible {
+    border: none;
+    outline: none;
+  }
+
+  &:active {
+    border: 1px solid #444444;
+  }
+
+  &:focus:invalid {
+    border: 1px solid #ff8282;
+  }
+
+  &:focus {
+    border: 1px solid #444444;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -137,12 +162,6 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 56px;
   }
-}
-
-.your-program__radio-name {
-  color: #222222;
-  padding-left: 45px;
-  position: relative;
 }
 
 .your-program__goals-list {
@@ -209,6 +228,20 @@
   @media (min-width: @tablet-width) {
     top: 8px;
   }
+}
+
+.your-program__radio-name {
+  color: #222222;
+  padding-left: 45px;
+  position: relative;
+
+  &:hover::before {
+    border: 1px solid #bababa;
+  }
+}
+
+.your-program__radio:disabled + .your-program__radio-name {
+  opacity: 0.3;
 }
 
 .your-program__contact {
@@ -281,6 +314,27 @@
   margin-left: 11px;
   padding: 11px 50px 11px 15px;
   border: 1px solid #cdcdcd;
+
+  &:focus-visible {
+    border: none;
+    outline: none;
+  }
+
+  &:active:invalid {
+    border: 1px solid #ff8282;
+  }
+
+  &:active {
+    border: 1px solid #444444;
+  }
+
+  &:focus:invalid {
+    border: 1px solid #ff8282;
+  }
+
+  &:focus {
+    border: 1px solid #444444;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -516,10 +570,18 @@
 .your-program__additional__comp {
   font-size: 16px;
 
+  &:hover::before {
+    border: 1px solid #bababa;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.your-program__additional__checkbox:disabled + .your-program__additional__comp {
+  opacity: 0.3;
 }
 
 .your-program__additional__compulsory {
