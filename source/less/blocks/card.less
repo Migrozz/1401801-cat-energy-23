@@ -6,11 +6,13 @@
   @media (min-width: @tablet-width) {
     width: 708px;
     padding: 0 30px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
     padding: 0 110px;
+    margin-bottom: 48px;
   }
 }
 
@@ -24,10 +26,17 @@
   border-top: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
-    padding: 26px 0 40px 0;
+    padding: 0;
+    padding-top: 56px;
     border: none;
-    font-size: 54px;
+    font-size: 60px;
     line-height: 60px;
+    margin-bottom: 161px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 72px;
+    margin-bottom: 164px;
   }
 }
 
@@ -43,7 +52,6 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     row-gap: 141px;
-    margin-top: 140px;
   }
 
   @media (min-width: @desktop-width) {
@@ -53,7 +61,8 @@
 }
 
 .card__item {
-  padding: 20px 0 25px 0;
+  padding-top: 19px;
+  padding-bottom: 25px;
   margin: 0;
   width: 280px;
   border-top: 1px solid #ebebeb;
@@ -62,29 +71,37 @@
   flex-wrap: wrap;
   position: relative;
 
+
   @media (min-width: @tablet-width) {
     width: 248px;
     flex-direction: column;
     background-color: #f2f2f2;
-    padding: 160px 38px 39px 38px;
     border: 0;
+    padding: 160px 38px 41px 38px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 170px;
-    padding: 160px 36px 40px 40px;
+    width: auto;
+    padding: 0;
+    padding-top: 160px;
+    padding-bottom: 11px;
+    align-items: center;
   }
 }
 
 .card__img-wrapper {
-  padding-right: 36px;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 140px;
+  height: 101px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    bottom: 295px;
-    left: 86px;
+    bottom: 302px;
+    left: 93px;
     padding: 0;
+    height: auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -93,6 +110,12 @@
 }
 
 .card__img--small {
+  padding-top: 26px;
+
+  &:first-child {
+    padding-top: 10px;
+  }
+
   @media (min-width: @tablet-width) {
     width: 162px;
     height: 173px;
@@ -100,6 +123,8 @@
 }
 
 .card__img--big {
+  padding-top: 10px;
+
   @media (min-width: @tablet-width) {
     width: 168px;
     height: 204px;
@@ -121,14 +146,19 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    width: 140px;
-    padding-left: 60px;
+    width: auto;
+    padding-left: 56px;
+    padding-right: 56px;
     margin-bottom: 21px;
+    padding-top: 1px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 20px;
     line-height: 21px;
+    padding-right: 15px;
+    padding-top: 5px;
+    margin-bottom: 24px;
   }
 }
 
@@ -157,7 +187,17 @@
     border-bottom: 1px solid #cdcdcd;
     font-size: 16px;
     line-height: 16px;
-    padding: 7px 0 9px 0;
+    padding: 7px 0 8px 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}
+
+.card__description-info__wrapper {
+  @media (min-width: @desktop-width) {
+    padding-left: 3px;
   }
 }
 
@@ -169,10 +209,13 @@
 
   @media (min-width: @tablet-width) {
     padding: 10px 93px;
+    margin-top: 31px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 10px 53px;
+    margin-top: 33px;
+    margin-bottom: 30px;
   }
 }
 
@@ -184,18 +227,18 @@
   color: #111111;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 56px;
+  padding-top: 60px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 22px;
     width: 134px;
-    padding-left: 60px;
+    padding-left: 56px;
     padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 15px;
+    padding-left: 0;
   }
 }
 
@@ -226,18 +269,19 @@
     &::before,
     &::after {
       width: 60px;
-      top: 82px;
-      left: 132px;
+      top: 79px;
+      left: 131px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    width: 166px;
+    width: auto;
+    padding-top: 129px;
 
     &::before,
     &::after {
-      top: 81px;
-      left: 92px;
+      top: 79px;
+      left: 91px;
     }
   }
 }
@@ -254,7 +298,7 @@
     font-size: 16px;
     line-height: 18px;
     width: 167px;
-    padding-left: 42px;
+    padding-left: 39px;
     margin-top: 23px;
     margin-bottom: 87px;
   }

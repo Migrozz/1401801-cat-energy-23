@@ -22,11 +22,10 @@
           <use xlink:href="img/icons/vector-sprite.svg#name-logo"></use>
         </svg>
       </a>
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -35,10 +34,9 @@
               <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item main-nav__item--current">
-              <a>Подбор продукции</a>
+              <a class="main-nav__link">Подбор программы</a>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
     <main class="page-main">
@@ -82,20 +80,22 @@
             <legend class="your-program__contact-title">
               Контактные данные (владельца кота)
             </legend>
-            <label class="your-program__contact-info">
-              E-mail:*
-              <input class="your-program__contact__field your-program__contact__field--mail" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-              <svg class="your-program__mail-icon" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/icons/vector-sprite.svg#mail-icon"></use>
-              </svg>
-            </label>
-            <label class="your-program__contact-info">
-              Телефон:*
-              <input class="your-program__contact__field your-program__contact__field--phone" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
-              <svg class="your-program__phone-icon" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/icons/vector-sprite.svg#phone-icon"></use>
-              </svg>
-            </label>
+            <div class="your-program__contact-content">
+              <label class="your-program__contact-info">
+                E-mail:*
+                <input class="your-program__contact__field your-program__contact__field--mail" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <svg class="your-program__mail-icon" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/icons/vector-sprite.svg#mail-icon"></use>
+                </svg>
+              </label>
+              <label class="your-program__contact-info">
+                Телефон:*
+                <input class="your-program__contact__field your-program__contact__field--phone" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
+                <svg class="your-program__phone-icon" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/icons/vector-sprite.svg#phone-icon"></use>
+                </svg>
+              </label>
+            </div>
           </fieldset>
           <fieldset class="your-program__comment">
             <legend class="your-program__comment-title">Комментарий</legend>
@@ -130,10 +130,10 @@
       </form>
     </main>
     <footer class="page-footer">
-      <section class="page-footer contacts contacts--index">
+      <section class="page-footer contacts">
         <div class="contacts__area">
-          <p class="contacts__welcome">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__welcome">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
         </div>
         <div class="contacts__map-container">
           <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d297.09592554907766!2d30.322992864862773!3d59.93852727947248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sde!4v1628610140538!5m2!1sru!2sde" width="320" height="362">
@@ -152,9 +152,9 @@
           <div class="page-footer__bottom-socials socials">
             <ul class="socials__list">
               <li class="socials__item">
-                <a class="socials__link" href="#">
+                <a class="socials__link socials__link--vk" href="#">
                   Вконтакте
-                  <svg width="23" height="16" viewBox="0 0 23 16" fill="none">
+                  <svg class="socials__img--vk" width="23" height="16" fill="none">
                     <use xlink:href="img/icons/vector-sprite.svg#vk-icon"></use>
                   </svg>
                 </a>
@@ -162,15 +162,15 @@
               <li class="socials__item">
                 <a class="socials__link" href="#">
                   Instagram
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" >
+                  <svg class="socials__img--inst" width="16" height="16" fill="none" >
                     <use xlink:href="img/icons/vector-sprite.svg#inst-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="socials__item">
-                <a class="socials__link" href="#">
+                <a class="socials__link socials__link--fb" href="#">
                   Facebook
-                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <svg class="socials__img--fb" width="22" height="22" fill="none">
                     <use xlink:href="img/icons/vector-sprite.svg#fb-icon"></use>
                   </svg>
                 </a>
