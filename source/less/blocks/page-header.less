@@ -26,20 +26,41 @@
     margin: 0 auto;
     margin-top: 40px;
     background-color: transparent;
+    padding-top: 10px;
   }
 }
 
-.page-header__logo {
+.page-header__link {
   display: flex;
   min-height: 66px;
   width: 280px;
   align-items: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo {
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
 }
 
 .page-header__img {
-  padding-left: 50px;
+  padding-left: 56px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 15px;
+    display: none;
   }
 }
