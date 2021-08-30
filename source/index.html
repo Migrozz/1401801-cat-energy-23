@@ -7,7 +7,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body page__body--index">
@@ -19,7 +19,7 @@
           <img class="page-header__logo" src="img/icons/logo-mobile.svg" width="34" height="38">
         </picture>
         <svg class="page-header__img"  width="101" height="18" viewBox="0 0 101 18" alt="Cat Energy">
-          <use xlink:href="img/icons/vector-sprite.svg#name-logo"></use>
+          <use xlink:href="img/vector-sprite.svg#name-logo"></use>
         </svg>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -45,6 +45,9 @@
           <h1 class="program__title">Функциональное питание для котов</h1>
           <p class="program__slogan">Занялся собой? Займись котом!</p>
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/products/index-can@1x.webp 1x, img/products/index-can@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/products/index-can-tablet@1x.webp 1x, img/products/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/products/index-can-mobile@1x.webp 1x, img/products/index-can-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/products/index-can@1x.png 1x, img/products/index-can@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/products/index-can-tablet@1x.png 1x, img/products/index-can-tablet@2x.png 2x">
             <img class="program__img" src="img/products/index-can-mobile@1x.png" srcset="img/products/index-can-mobile@2x.png 2x" width="280" height="270" alt="Корм для  кошек Cat Energy PRO">
@@ -129,16 +132,18 @@
               <div class="example__before">
                 <h3 class="example__title visually-hidden">Было</h3>
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/photo/before-tablet@1x.png 1x, img/photo/before-tablet@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo/before-tablet@1x.png, img/photo/before-tablet@2x.png 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo/before-tablet@1x.webp 1x, img/photo/before-tablet@2x.webp 2x">
+                  <source type="image/webp"  srcset="img/photo/before-mobile@1x.webp 1x, img/photo/before-mobile@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo/before-tablet@1x.png 1x, img/photo/before-tablet@2x.png 2x">
                   <img class="example__img example__img--before" src="img/photo/before-mobile@1x.png" srcset="img/photo/before-mobile@2x.png 2x" width="311" height="232" alt="Кот до Cat energy slim">
                 </picture>
               </div>
               <div class="example__after">
                 <h3 class="example__title visually-hidden">Стало</h3>
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/photo/after-tablet@1x.png 1x, img/photo/after-tablet@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo/after-tablet@1x.png, img/photo/after-tablet@2x.png 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo/after-tablet@1x.webp 1x, img/photo/after-tablet@2x.webp 2x">
+                  <source type="image/webp"  srcset="img/photo/after-mobile@1x.webp 1x, img/photo/after-mobile@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo/after-tablet@1x.png 1x, img/photo/after-tablet@2x.png 2x">
                   <img class="example__img example__img--after" src="img/photo/after-mobile@1x.png" srcset="img/photo/after-mobile@2x.png 2x" width="251" height="232" alt="Кот после cat energy slim">
                 </picture>
               </div>
@@ -168,7 +173,7 @@
           <div class="page-footer__bottom-brand">
             <a class="page-footer__bottom-link">
               <svg width="128" height="24" viewBox="0 0 128 24" alt="Cat Energy">
-                <use xlink:href="img/icons/vector-sprite.svg#footer-logo"></use>
+                <use xlink:href="img/vector-sprite.svg#footer-logo"></use>
               </svg>
             </a>
           </div>
@@ -178,7 +183,7 @@
                 <a class="socials__link socials__link--vk" href="#">
                   Вконтакте
                   <svg class="socials__img--vk" width="23" height="16" fill="none">
-                    <use xlink:href="img/icons/vector-sprite.svg#vk-icon"></use>
+                    <use xlink:href="img/vector-sprite.svg#vk-icon"></use>
                   </svg>
                 </a>
               </li>
@@ -186,7 +191,7 @@
                 <a class="socials__link" href="#">
                   Instagram
                   <svg class="socials__img--inst" width="16" height="16" fill="none" >
-                    <use xlink:href="img/icons/vector-sprite.svg#inst-icon"></use>
+                    <use xlink:href="img/vector-sprite.svg#inst-icon"></use>
                   </svg>
                 </a>
               </li>
@@ -194,7 +199,7 @@
                 <a class="socials__link socials__link--fb" href="#">
                   Facebook
                   <svg class="socials__img--fb" width="22" height="22" fill="none">
-                    <use xlink:href="img/icons/vector-sprite.svg#fb-icon"></use>
+                    <use xlink:href="img/vector-sprite.svg#fb-icon"></use>
                   </svg>
                 </a>
               </li>
@@ -204,28 +209,13 @@
             <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
               <span class="page-footer__copyright-name">HTML Academy</span>
               <svg class="page-footer__copyright-sign" width="27" height="34" viewBox="0 0 27 34" >
-                <use xlink:href="img/icons/vector-sprite.svg#academy-logo"></use>
+                <use xlink:href="img/vector-sprite.svg#academy-logo"></use>
               </svg>
             </a>
           </div>
         </div>
       </section>
     </footer>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
