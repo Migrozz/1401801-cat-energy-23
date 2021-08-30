@@ -7,7 +7,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -19,7 +19,7 @@
           <img class="page-header__logo" src="img/icons/logo-mobile.svg" width="34" height="38">
         </picture>
         <svg class="page-header__img"  width="101" height="18" viewBox="0 0 101 18" alt="Cat Energy">
-          <use xlink:href="img/icons/vector-sprite.svg#name-logo"></use>
+          <use xlink:href="img/vector-sprite.svg#name-logo"></use>
         </svg>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -85,14 +85,14 @@
                 E-mail:*
                 <input class="your-program__contact__field your-program__contact__field--mail" type="email" name="email" placeholder="kuklachev@gmail.com" required>
                 <svg class="your-program__mail-icon" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/icons/vector-sprite.svg#mail-icon"></use>
+                  <use xlink:href="img/vector-sprite.svg#mail-icon"></use>
                 </svg>
               </label>
               <label class="your-program__contact-info">
                 Телефон:*
                 <input class="your-program__contact__field your-program__contact__field--phone" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
                 <svg class="your-program__phone-icon" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/icons/vector-sprite.svg#phone-icon"></use>
+                  <use xlink:href="img/vector-sprite.svg#phone-icon"></use>
                 </svg>
               </label>
             </div>
@@ -145,7 +145,7 @@
           <div class="page-footer__bottom-brand">
             <a class="page-footer__bottom-link">
               <svg width="128" height="24" viewBox="0 0 128 24" alt="Cat Energy">
-                <use xlink:href="img/icons/vector-sprite.svg#footer-logo"></use>
+                <use xlink:href="img/vector-sprite.svg#footer-logo"></use>
               </svg>
             </a>
           </div>
@@ -155,7 +155,7 @@
                 <a class="socials__link socials__link--vk" href="#">
                   Вконтакте
                   <svg class="socials__img--vk" width="23" height="16" fill="none">
-                    <use xlink:href="img/icons/vector-sprite.svg#vk-icon"></use>
+                    <use xlink:href="img/vector-sprite.svg#vk-icon"></use>
                   </svg>
                 </a>
               </li>
@@ -163,7 +163,7 @@
                 <a class="socials__link" href="#">
                   Instagram
                   <svg class="socials__img--inst" width="16" height="16" fill="none" >
-                    <use xlink:href="img/icons/vector-sprite.svg#inst-icon"></use>
+                    <use xlink:href="img/vector-sprite.svg#inst-icon"></use>
                   </svg>
                 </a>
               </li>
@@ -171,7 +171,7 @@
                 <a class="socials__link socials__link--fb" href="#">
                   Facebook
                   <svg class="socials__img--fb" width="22" height="22" fill="none">
-                    <use xlink:href="img/icons/vector-sprite.svg#fb-icon"></use>
+                    <use xlink:href="img/vector-sprite.svg#fb-icon"></use>
                   </svg>
                 </a>
               </li>
@@ -181,28 +181,13 @@
             <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
               <span class="page-footer__copyright-name">HTML Academy</span>
               <svg class="page-footer__copyright-sign" width="27" height="34" viewBox="0 0 27 34" >
-                <use xlink:href="img/icons/vector-sprite.svg#academy-logo"></use>
+                <use xlink:href="img/vector-sprite.svg#academy-logo"></use>
               </svg>
             </a>
           </div>
         </div>
       </section>
     </footer>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
