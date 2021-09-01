@@ -78,53 +78,59 @@
             </ul>
           </fieldset>
           <fieldset class="your-program__contact">
-            <legend class="your-program__contact-title">
-              Контактные данные (владельца кота)
-            </legend>
-            <div class="your-program__contact-content">
-              <label class="your-program__contact-info">
-                E-mail:*
-                <input class="your-program__contact__field your-program__contact__field--mail" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-                <svg class="your-program__mail-icon" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/vector-sprite.svg#mail-icon"></use>
-                </svg>
-              </label>
-              <label class="your-program__contact-info">
-                Телефон:*
-                <input class="your-program__contact__field your-program__contact__field--phone" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
-                <svg class="your-program__phone-icon" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/vector-sprite.svg#phone-icon"></use>
-                </svg>
-              </label>
+            <div class="you-program__container">
+              <legend class="your-program__contact-title">
+                Контактные данные (владельца кота)
+              </legend>
+              <div class="your-program__contact-content">
+                <label class="your-program__contact-info">
+                  E-mail:*
+                  <input class="your-program__contact__field your-program__contact__field--mail" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                  <svg class="your-program__mail-icon" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/vector-sprite.svg#mail-icon"></use>
+                  </svg>
+                </label>
+                <label class="your-program__contact-info">
+                  Телефон:*
+                  <input class="your-program__contact__field your-program__contact__field--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                  <svg class="your-program__phone-icon" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/vector-sprite.svg#phone-icon"></use>
+                  </svg>
+                </label>
+              </div>
             </div>
           </fieldset>
           <fieldset class="your-program__comment">
-            <legend class="your-program__comment-title">Комментарий</legend>
-            <textarea class="your-program__comment__field" name="letter" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="you-program__container">
+              <legend class="your-program__comment-title">Комментарий</legend>
+              <textarea class="your-program__comment__field" name="letter" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
           </fieldset>
           <fieldset class="your-program__additional">
-            <legend class="your-program__additional-title">Дополнительно</legend>
-            <ul class="your-program__additional-list">
-              <li class="your-program__additional-item">
-                <input class="your-program__additional__checkbox visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
-                <label class="your-program__additional__comp" for="sugar">Сахарозаменитель</label>
-              </li>
-              <li class="your-program__additional-item">
-                <input class="your-program__additional__checkbox visually-hidden" type="checkbox" name="water" id="water">
-                <label class="your-program__additional__comp" for="water">Питьевая вода</label>
-              </li>
-              <li class="your-program__additional-item">
-                <input class="your-program__additional__checkbox visually-hidden" type="checkbox" name="milk" id="milk">
-                <label class="your-program__additional__comp" for="milk">Молоко</label>
-              </li>
-              <li class="your-program__additional-item">
-                <input class="your-program__additional__checkbox visually-hidden" type="checkbox" name="vita" id="vita">
-                <label class="your-program__additional__comp" for="vita">Витамины</label>
-              </li>
-            </ul>
-            <div class="your-program__submit-wrapper">
-              <button class="your-program__submit button" type="submit">Отправить заявку</button>
-              <span class="your-program__additional__compulsory">* — Обязательные поля</span>
+            <div class="you-program__container">
+              <legend class="your-program__additional-title">Дополнительно</legend>
+              <ul class="your-program__additional-list">
+                <li class="your-program__additional-item">
+                  <input class="your-program__additional__checkbox visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
+                  <label class="your-program__additional__comp" for="sugar">Сахарозаменитель</label>
+                </li>
+                <li class="your-program__additional-item">
+                  <input class="your-program__additional__checkbox visually-hidden" type="checkbox" name="water" id="water">
+                  <label class="your-program__additional__comp" for="water">Питьевая вода</label>
+                </li>
+                <li class="your-program__additional-item">
+                  <input class="your-program__additional__checkbox visually-hidden" type="checkbox" name="milk" id="milk">
+                  <label class="your-program__additional__comp" for="milk">Молоко</label>
+                </li>
+                <li class="your-program__additional-item">
+                  <input class="your-program__additional__checkbox visually-hidden" type="checkbox" name="vita" id="vita">
+                  <label class="your-program__additional__comp" for="vita">Витамины</label>
+                </li>
+              </ul>
+              <div class="your-program__submit-wrapper">
+                <button class="your-program__submit button" type="submit">Отправить заявку</button>
+                <span class="your-program__additional__compulsory">* — Обязательные поля</span>
+              </div>
             </div>
           </fieldset>
         </div>
@@ -155,7 +161,7 @@
               <li class="socials__item">
                 <a class="socials__link socials__link--vk" href="#">
                   Вконтакте
-                  <svg class="socials__img--vk" width="23" height="16" fill="none">
+                  <svg class="socials__img socials__img--vk" width="23" height="16" fill="none">
                     <use xlink:href="img/vector-sprite.svg#vk-icon"></use>
                   </svg>
                 </a>
@@ -163,7 +169,7 @@
               <li class="socials__item">
                 <a class="socials__link" href="#">
                   Instagram
-                  <svg class="socials__img--inst" width="16" height="16" fill="none" >
+                  <svg class="socials__img socials__img--inst" width="16" height="16" fill="none" >
                     <use xlink:href="img/vector-sprite.svg#inst-icon"></use>
                   </svg>
                 </a>
@@ -171,7 +177,7 @@
               <li class="socials__item">
                 <a class="socials__link socials__link--fb" href="#">
                   Facebook
-                  <svg class="socials__img--fb" width="22" height="22" fill="none">
+                  <svg class="socials__img socials__img--fb" width="22" height="22" fill="none">
                     <use xlink:href="img/vector-sprite.svg#fb-icon"></use>
                   </svg>
                 </a>
