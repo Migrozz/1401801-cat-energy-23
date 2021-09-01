@@ -166,6 +166,16 @@
   @media (min-width: @desktop-width) {
     background-color: #f2f2f2;
   }
+
+  &--time {
+    @media (min-width: @tablet-width) {
+      left: 9px;
+      white-space: nowrap;
+      padding-left: 8px;
+      padding-right: 8px;
+      width: 127px;
+    }
+  }
 }
 
 .example__costs {
@@ -343,7 +353,7 @@
   }
 }
 
-.example__togggles-pointer {
+.example__toggles-pointer {
   position: absolute;
   width: 35px;
   height: 6px;
@@ -355,9 +365,10 @@
   @media (min-width: @tablet-width) {
     background-color: transparent;
     height: 34px;
-    width: 50%;
-    top: 0;
+    width: 34px;
+    top: -18px;
     left: 0;
+    margin-left: calc(50% - 14px);
 
     &::before {
       content: "";
@@ -366,8 +377,8 @@
       width: 8px;
       height: 8px;
       background-color: #68b738;
-      right: -5px;
-      top: -4px;
+      right: 14px;
+      top: 14px;
       border-radius: 50%;
     }
 
@@ -379,8 +390,8 @@
       border-radius: 50%;
       background-color: #ffffff;
       border: 1px solid #cdcdcd;
-      top: -18px;
-      right: -19px;
+      top: 0;
+      right: 0;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
     }
 

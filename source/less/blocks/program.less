@@ -34,6 +34,18 @@
   flex-direction: column;
   margin: 0 auto;
 
+  &::before {
+    @media (max-width: @mobile-width-only) {
+      content: "";
+      position: absolute;
+      background-color: #68b738;
+      z-index: -1;
+      width: 280px;
+      height: 270px;
+      top: 0;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     width: 620px;
     min-height: 804px;
