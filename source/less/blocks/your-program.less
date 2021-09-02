@@ -1,6 +1,7 @@
 .your-program {
   margin: 0 auto;
   font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
 }
 
 .your-program__fieldset-wrapper {
@@ -91,7 +92,7 @@
   margin-bottom: 16px;
 }
 
-.your-program__info__field {
+.your-program__info-field {
   margin: 0;
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
@@ -135,7 +136,7 @@
   }
 }
 
-.your-program__info__field--name {
+.your-program__info-field--name {
   width: 224px;
 
   @media (min-width: @tablet-width) {
@@ -147,7 +148,7 @@
   }
 }
 
-.your-program__info__field--weight {
+.your-program__info-field--weight {
   width: 200px;
 
   @media (min-width: @tablet-width) {
@@ -159,7 +160,7 @@
   }
 }
 
-.your-program__info__field--age {
+.your-program__info-field--age {
   width: 166px;
 
   @media (min-width: @tablet-width) {
@@ -192,21 +193,20 @@
   border-top: 1px solid #d9d9d9;
   padding-bottom: 15px;
   padding-top: 12px;
+  padding-left: 46px;
 
   @media (min-width: @tablet-width) {
     border-top: none;
     border-bottom: none;
     border: 1px solid #e7e7e7;
     box-sizing: border-box;
-    padding-left: 25px;
+    padding-left: 89px;
     padding-bottom: 19px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
-    margin-left: 84px;
+    margin: 0 0 66px 84px;
     padding-top: 17px;
-    height: 196px;
     padding-right: 250px;
   }
 }
@@ -229,13 +229,13 @@
   border-radius: 50%;
   border: 1px solid #cdcdcd;
   box-sizing: border-box;
-  left: 0;
-  top: -5px;
+  left: -46px;
+  top: -4px;
 
   @media (min-width: @tablet-width) {
     width: 40px;
     height: 40px;
-    left: 4px;
+    left: -60px;
     top: -3px;
   }
 }
@@ -248,12 +248,12 @@
   border-radius: 50%;
   background-color: #68b738;
   box-sizing: border-box;
-  top: 3px;
-  left: 8px;
+  top: 4px;
+  left: -38px;
 
   @media (min-width: @tablet-width) {
     top: 8px;
-    left: 15px;
+    left: -49px;
     width: 18px;
     height: 18px;
   }
@@ -261,15 +261,10 @@
 
 .your-program__radio-name {
   color: #222222;
-  padding-left: 45px;
   position: relative;
 
   &:hover::before {
     border: 1px solid #bababa;
-  }
-
-  @media (min-width: @tablet-width) {
-    padding-left: 64px;
   }
 }
 
@@ -332,6 +327,8 @@
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
+  font-weight: 400;
+  margin: 0;
   margin-bottom: 35px;
   background-color: #ffffff;
   padding-right: 11px;
@@ -538,6 +535,8 @@
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
+  font-weight: 400;
+  margin: 0;
   padding-right: 23px;
   padding-left: 20px;
   background-color: #ffffff;
@@ -624,6 +623,8 @@
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
+  font-weight: 400;
+  margin: 0;
   padding-right: 24px;
   background-color: #ffffff;
   margin-bottom: 34px;
@@ -683,7 +684,7 @@
   }
 }
 
-.your-program__additional__checkbox + .your-program__additional__comp::before {
+.your-program__additional-checkbox + .your-program__additional-component::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -701,7 +702,7 @@
   }
 }
 
-.your-program__additional__checkbox:checked + .your-program__additional__comp::after {
+.your-program__additional-checkbox:checked + .your-program__additional-component::after {
   content: "";
   position: absolute;
   background: url("../img/icons/tick.svg") no-repeat;
@@ -716,7 +717,7 @@
   }
 }
 
-.your-program__additional__checkbox:focus + .your-program__additional__comp::before {
+.your-program__additional-checkbox:focus + .your-program__additional-component::before {
   border: 1px solid #ff8282;
 }
 
@@ -761,7 +762,7 @@
   }
 }
 
-.your-program__additional__comp {
+.your-program__additional-component {
   font-size: 16px;
 
   &:hover::before {
@@ -774,11 +775,11 @@
   }
 }
 
-.your-program__additional__checkbox:disabled + .your-program__additional__comp {
+.your-program__additional-checkbox:disabled + .your-program__additional-component {
   opacity: 0.3;
 }
 
-.your-program__additional__compulsory {
+.your-program__additional-compulsory {
   font-family: "Aral", sans-serif;
   line-height: 16px;
   text-transform: none;
