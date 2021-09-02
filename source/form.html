@@ -23,8 +23,8 @@
           <use xlink:href="img/vector-sprite.svg#name-logo"></use>
         </svg>
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
+      <nav class="main-nav main-nav--closed main-nav--nojs"> <!-- Класс main-nav--nojs отвечает за показ меню без работоспособного js, класс main-nav--opened за открытие  а  main-nav--closed за закрытие меню-->
+        <button class="main-nav__toggle" type="button"> <!-- main-nav__toggle в сочетании с main-nav--opened и main-nav--closed отвечает за внешний вид кнопки  гамбургера-->
           <span class="visually-hidden">Открыть меню</span>
         </button>
           <ul class="main-nav__list">
@@ -51,15 +51,15 @@
             <div class="your-program__info-block">
               <label class="your-program__info-name">
                 Имя:*
-                <input class="your-program__info__field your-program__info__field--name" type="text" name="name" placeholder="Барсик" required>
+                <input class="your-program__info-field your-program__info-field--name" type="text" name="name" placeholder="Барсик" required>
               </label>
               <label class="your-program__info-name">
                 Вес (кг):*
-                <input class="your-program__info__field your-program__info__field--weight" type="text" name="weight" placeholder="7" required>
+                <input class="your-program__info-field your-program__info-field--weight" type="text" name="weight" placeholder="7" required>
               </label>
               <label class="your-program__info-name">
                 Возраст (лет):
-                <input class="your-program__info__field your-program__info__field--age" type="text" name="age" placeholder="7">
+                <input class="your-program__info-field your-program__info-field--age" type="text" name="age" placeholder="7">
               </label>
             </div>
             <ul class="your-program__goals-list">
@@ -79,9 +79,9 @@
           </fieldset>
           <fieldset class="your-program__contact">
             <div class="you-program__container">
-              <legend class="your-program__contact-title">
+              <h3 class="your-program__contact-title">
                 Контактные данные (владельца кота)
-              </legend>
+              </h3>
               <div class="your-program__contact-content">
                 <label class="your-program__contact-info">
                   E-mail:*
@@ -102,34 +102,34 @@
           </fieldset>
           <fieldset class="your-program__comment">
             <div class="you-program__container">
-              <legend class="your-program__comment-title">Комментарий</legend>
+              <h3 class="your-program__comment-title">Комментарий</h3>
               <textarea class="your-program__comment__field" name="letter" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
           <fieldset class="your-program__additional">
             <div class="you-program__container">
-              <legend class="your-program__additional-title">Дополнительно</legend>
+              <h3 class="your-program__additional-title">Дополнительно</h3>
               <ul class="your-program__additional-list">
                 <li class="your-program__additional-item">
-                  <input class="your-program__additional__checkbox visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
-                  <label class="your-program__additional__comp" for="sugar">Сахарозаменитель</label>
+                  <input class="your-program__additional-checkbox visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
+                  <label class="your-program__additional-component" for="sugar">Сахарозаменитель</label>
                 </li>
                 <li class="your-program__additional-item">
-                  <input class="your-program__additional__checkbox visually-hidden" type="checkbox" name="water" id="water">
-                  <label class="your-program__additional__comp" for="water">Питьевая вода</label>
+                  <input class="your-program__additional-checkbox visually-hidden" type="checkbox" name="water" id="water">
+                  <label class="your-program__additional-component" for="water">Питьевая вода</label>
                 </li>
                 <li class="your-program__additional-item">
-                  <input class="your-program__additional__checkbox visually-hidden" type="checkbox" name="milk" id="milk">
-                  <label class="your-program__additional__comp" for="milk">Молоко</label>
+                  <input class="your-program__additional-checkbox visually-hidden" type="checkbox" name="milk" id="milk">
+                  <label class="your-program__additional-component" for="milk">Молоко</label>
                 </li>
                 <li class="your-program__additional-item">
-                  <input class="your-program__additional__checkbox visually-hidden" type="checkbox" name="vita" id="vita">
-                  <label class="your-program__additional__comp" for="vita">Витамины</label>
+                  <input class="your-program__additional-checkbox visually-hidden" type="checkbox" name="vita" id="vita">
+                  <label class="your-program__additional-component" for="vita">Витамины</label>
                 </li>
               </ul>
               <div class="your-program__submit-wrapper">
                 <button class="your-program__submit button" type="submit">Отправить заявку</button>
-                <span class="your-program__additional__compulsory">* — Обязательные поля</span>
+                <span class="your-program__additional-compulsory">* — Обязательные поля</span>
               </div>
             </div>
           </fieldset>
@@ -156,7 +156,7 @@
               </svg>
             </a>
           </div>
-          <div class="page-footer__bottom-socials socials">
+          <div class="socials">
             <ul class="socials__list">
               <li class="socials__item">
                 <a class="socials__link socials__link--vk" href="#">
