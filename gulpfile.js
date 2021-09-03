@@ -14,6 +14,23 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
 
+// createStyles
+
+const createStyles = (done) => {
+  return gulp.src("source/less/style.less")
+  .pipe(plumber())
+  .pipe(sourcemap.init())
+  .pipe(less())
+  .pipe(rename("style.css"))
+  .pipe(sourcemap.write("."))
+  .pipe(gulp.dest("source/css"))
+
+  done();
+}
+
+exports.createStyles = createStyles;
+
+
 // Styles
 
 const styles = () => {
@@ -103,7 +120,7 @@ const copy = (done) => {
     "source/img/**/*.svg",
     "!source/img/icons/*.svg",
     "source/manifest.webmanifest",
-    "source/css/style.css"
+    "source/css/style.css",
   ], {
     base: "source"
   })
@@ -154,6 +171,7 @@ const watcher = () => {
 
 const build = gulp.series(
   clean,
+  createStyles,
   copy,
   optimizeImages,
   gulp.parallel(
@@ -169,6 +187,7 @@ exports.build = build;
 
 exports.default = gulp.series(
   clean,
+  createStyles,
   copy,
   copyImages,
   gulp.parallel(
